@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fff5e9;
+}
+
+.use-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.use-playfair {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.use-playwrite {
+  font-family: "Playwrite MX", sans-serif;
+}
+
+.use-pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.special-bg {
+  background-image: url("https://img.freepik.com/free-photo/dark-texture-surface_24837-340.jpg?t=st=1719525628~exp=1719529228~hmac=31c00acb7e62ae74e9632a136ccebd0240bf9dadbe4867131093c3aca5efcdcc&w=826");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.special-bg2 {
+  background-image: url("https://png.pngtree.com/background/20230621/original/pngtree-rapidly-satisfy-your-hunger-with-3d-fast-food-background-03-picture-image_3910286.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.black-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7) 2%,
+    rgba(255, 255, 255, 0) 99%
+  );
+}
+
+.smooth-scrolling {
+  scroll-behavior: smooth;
+}
+
+.transition-custom {
+  transition: background-color 0.5s, color 0.25s;
+}
+
+.scene {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.6s;
+}
+
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
